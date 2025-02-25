@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dengue en El Salvador</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <img src="assets/images/ugb-logo.webp" alt="Logo ugb" class="header-logo">
+        <h1>Dengue en El Salvador</h1>
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#sintomas">Síntomas</a>
+            <a href="#prevencion">Prevención</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <dengue-alerta></dengue-alerta>
+            <img src="assets/images/dengue-mosquito.jpg" alt="Mosquito Aedes aegypti" 
+                 style="max-width: 600px; width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </section>
+
+        <section id="sintomas" class="section">
+            <h2>Síntomas del Dengue</h2>
+            <div class="symptoms-grid">
+                <div class="symptom-card" onmouseover="scaleCard(this)" onmouseout="unscaleCard(this)">
+                    <h3>Fiebre alta</h3>
+                    <p>40°C (104°F) acompañada de dolor de cabeza</p>
+                </div>
+            
+                <div class="symptom-card" onmouseover="scaleCard(this)" onmouseout="unscaleCard(this)">
+                    <h3>🔴 Dolor abdominal</h3>
+                    <p>Intenso y continuo - señal de alarma</p>
+                </div>
+            
+                <div class="symptom-card" onmouseover="scaleCard(this)" onmouseout="unscaleCard(this)">
+                    <h3>💧 Vómitos</h3>
+                    <p>Persistentes (más de 3 veces por hora)</p>
+                </div>
+            
+                <div class="symptom-card" onmouseover="scaleCard(this)" onmouseout="unscaleCard(this)">
+                    <h3>🩹 Hemorragias</h3>
+                    <p>Sangrado de encías o nariz espontáneo</p>
+                </div>
+            
+                <div class="symptom-card" onmouseover="scaleCard(this)" onmouseout="unscaleCard(this)">
+                    <h3>😫 Estado mental</h3>
+                    <p>Irritabilidad o somnolencia anormal</p>
+                </div>
+            
+                <div class="symptom-card" onmouseover="scaleCard(this)" onmouseout="unscaleCard(this)">
+                    <h3>📉 Hipotermia</h3>
+                    <p>Caída repentina de la temperatura corporal</p>
+                </div>
+            
+                <div class="symptom-card" onmouseover="scaleCard(this)" onmouseout="unscaleCard(this)">
+                    <h3>💨 Respiración</h3>
+                    <p>Dificultad para respirar (buscar atención inmediata)</p>
+                </div>
+            </div>   
+            </div>
+        </section>
+
+        <section id="prevencion" class="section">
+            <h2>Medidas de Prevención</h2>
+            <div class="prevention-content">
+                <img src="assets/images/prevention.jpg" alt="Medidas de prevención">
+   
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Ministerio de Salud de El Salvador</p>
+        <p>KARLA LISSETH LOPEZ HERRERA SMSS097523</p>
+        <p>WESLEY LEVI VASQUEZ REYES SMSS127823</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
